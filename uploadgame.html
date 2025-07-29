@@ -1,0 +1,67 @@
+
+<head>
+<!--responsive to mobile-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!--load jquery to reuse sidebar if any -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class = "background">
+<div class = "top-banner">
+   <div style="display: flex; flex-direction: row; margin: auto; padding: 10%;">
+
+        <div>
+            <img src="UMassDartmouthLogo.png" style="width: 50%; margin: auto; padding: auto;">
+        </div>
+
+        <div>
+            <h2>Gamedev Club</h2>
+        </div>
+        
+
+    </div>
+    <p>This is where I'd put a banner if I had one.</p>
+</div> <!--end of top banner-->
+
+
+<div class = "content">
+    <div class ="navigation">
+        <a href="#" class="button">Home</a>
+        <a href="#" class="button">About</a>
+        <a href="#" class="button">Join</a>
+        <a href="#" class="button">How to get started in Gamedev</a>
+        <a href="#" class="button">Our Member's Games</a>
+    
+    </div> <!--end of Navigation-->
+
+    <div style="display: flex; flex-direction: column;">
+    <h2>Upload Your Game Info</h2>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" required>
+  
+      <label for="game">Game:</label>
+      <input type="text" name="game" id="game" required>
+  
+  
+      <label for="description">Description:</label>
+      <textarea name="description" id="description" rows="4" required></textarea>
+  
+      <label for="image">Upload Image:</label>
+      <input type="file" name="image" id="image" accept="image/*" required>
+  
+      <button type="submit">Submit</button>
+    </form>
+    </div>
+
+
+    </div><!--end of content-->
+
+    </div><!-- end of background-->>
+
+</body>
+</html>

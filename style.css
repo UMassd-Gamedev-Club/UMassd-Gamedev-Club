@@ -1,5 +1,9 @@
+body{
+    margin:0;
+}
+
 .background{
-    background-color: #003764;
+    background-color: #ffffff;
     max-width: 100%;
     min-height: 100vh;
     padding: 20px;
@@ -13,46 +17,123 @@
 
 .top-banner{
     text-align: center;
-    background-color: white;
-    width: 80%;
-    min-height: 200px;
-    margin: 0 auto ;
+    /* background-color: white; */
+    width: 70%;
+    margin: 30%, auto ;
+    padding-bottom: 1%;
+    display:flex;
+    flex-direction: row;
 }
 
-.content{
-    width: 90%;
-    height: 90%;
-    min-height: 50vh;
-    padding: 20px;
-    margin: 10px;
-    background-color: white;
-}
-
-.navigation{
-    background-color: #00aedd;
-    min-height: 100px;
+.top-banner img{
     width: 100%;
+    margin: auto;
     padding: auto;
-    margin: 10px 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px; 
-    justify-content: center;
+    border: 3px solid black;
 }
-.button {
-    min-width: 100px;
-    height: fit-content;
-    height: 100%;
-    padding: 10px;
-    margin: auto 0;
-    flex-wrap: wrap;
-    background-color: #403825; 
-    border: none;
+
+nav{
+    width: 80%;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f2d43d;
+    
+}
+
+nav ul li {
+    float: left;
+  }
+
+nav ul li:last-child {
+    float: right;
+}
+
+nav ul li a{
+    display: block;
     color: white;
     text-align: center;
+    padding: 20px 40px;
     text-decoration: none;
-    cursor: pointer;
-  }
+}
+
+nav ul li a:hover:not(.active) {
+  background-color: #b19b2c;
+}
+
+.active {
+  background-color: #203a73;
+}
+
+.main{
+    width: 80%;
+    margin: 1% 0%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.content{
+    width:75%;
+    margin-right: 2%;
+    background-color: #fefefe;
+    border: 2px solid #203a73;
+}
+
+.content h1{
+    margin:1% 2%;
+}
+.content hr{
+    margin:1% 1%;
+}
+.content p{
+    margin:2% 3%;
+}
+.content img{
+    width: 200px;
+    padding: 0px 25px;
+    height: 250px;
+    margin:1% 2%;
+    border: 1px solid #203a73;
+    float:right;
+}
+
+.Important{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.STUFF{
+    width:25%;
+    height:400px;
+    margin:2% 2%;
+    border-right: 1px solid #203a73;
+}
+.STUFF p{
+    margin-bottom: 10px;
+}
+
+.STUFF b{
+    font-size: 20px;
+    color:#f2d43d;
+}
+
+.STUFF:last-child{
+    border-right: none;
+}
+
+.extra{
+    width:20%;
+    height: 400px;
+    background-color: rgb(234, 234, 234);
+    border: 2px solid #203a73;
+    float: right;
+}
   .gallery-year-button:hover{
     background-color: #221d11;
   }
